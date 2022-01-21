@@ -2,6 +2,7 @@
 🗒 Application commands with explanations, examples. Applications: go, docker, bash...
 
 ## About folders
+- `WSL` - usefull cheatsheets with wsl [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/about)
 - `bash` - usefull [linux](https://ru.wikipedia.org/wiki/Linux) commands with explanations
 - `docker` - main [docker](https://www.docker.com/) commands with explanations
 - `github` - main [git](https://github.com/) commands with explanations
