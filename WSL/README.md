@@ -6,6 +6,7 @@ What the [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/about)?
 - [Update Linux?](How-to-update-Linux?)
 - [Reset password on WSL?](How-to-reset-password-on-WSL?)
 - [Turn off Linux on Windows?](How-to-turn-off-Linux-on-Windows?)
+- [Use Linux commands in Windows?](How-to-use-Linux-commands-in-Windows?)
 
 ## How to install WSL?
 > Official instruction of installation wsl 2 [here](https://docs.microsoft.com/ru-ru/windows/wsl/install-manual)
@@ -63,4 +64,19 @@ Just run this command on `powershell`
 ```powershell
 # This command turn off procces WSL on Windows
 wsl --shutdown
+```
+
+## How to use Linux commands in Windows?
+If you want use linux commands on `CMD` or `Powershell` you can use it easy.
+
+Usage on `powershell`:
+```powershell
+wsl -e {linux_command}
+```
+> If your WSL is not enabled, it will enable it. You have to `shutdown` yourself.
+
+Example: You want to check how many proces works on your windows
+```powershell
+PS) ps | wsl -e wc -l
+192
 ```
