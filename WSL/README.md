@@ -20,7 +20,7 @@ sudo apt update
 
 ### Step 2. Install update
 ```bash
-sudo apt -y update
+sudo apt -y upgrade
 ```
 
 ## How to reset password on WSL?
