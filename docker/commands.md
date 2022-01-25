@@ -97,7 +97,7 @@ REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
 <none>       <none>    f05ff1a74e28   6 seconds ago   943MB
 ```
 
-To remove image run command `docker image rm {IMAGE ID or TAG}`
+To remove image run command `docker image rm {IMAGE ID or REPOSITORY}`
 ```bash
 $ docker image rm f05ff1a74e28
 ```
@@ -111,7 +111,7 @@ $ docker images
 REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
 <none>       <none>    f05ff1a74e28   6 seconds ago   943MB
 ```
-2. Second build container with image `ID` or `TAG`. We will use `Image ID` cause our image haven't `TAG`. (Usage: `docker run {Image ID or TAG }`)
+2. Second build container with image `ID` or `REPOSITORY`. We will use `Image ID` cause our image haven't `REPOSITORY`. (Usage: `docker run {Image ID or REPOSITORY}`)
 ```
 $ docker run f05ff1a74e28
 Hello from Container!
@@ -153,8 +153,8 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
 # More detailed 
 ## Docker image
-
+<!-- docker build -f {filename} | . , docker image ls | tag | pull | prune | inspect   -->
 ## Docker container
-
+<!-- docker container run -d --rm --name {name} {imageid or name} | create {} |  | stop -->
 ## Docker volumes
 
