@@ -11,14 +11,19 @@ if version is what you want, just run
 sudo apt install {app}
 ```
 
-## .tar.gz
+## .tar
 Your programs should be in installed in folder "/opt"
 - Example:
 ```
 # First You should downlad using wget or something else
 wget "downlad-link"
+
 # Unpack tar file
+## If .tar.gz
 sudo tar -xzf {app.tar.gz}
+## If .tar.xz
+sudo tar -xf {app.tar.xz}
+
 # After Remove tar file
 rm {app.tar.gz}
 ```
